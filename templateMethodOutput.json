@@ -1,0 +1,26 @@
+[
+	{
+		"purchaseDate": "2021/11/20",
+		"shop": "メルカリ",
+		"price": "600",
+		"discount": "52",
+		"paymentMethod": "クレジットカード",
+		"title": "スラスラわかるJava第2版"
+	},
+	{
+		"purchaseDate": "2021/11/20",
+		"shop": "メルカリ",
+		"price": "400",
+		"discount": "0",
+		"paymentMethod": "メルペイ残高",
+		"title": "Rubyの冒険 遊遊編"
+	},
+	{
+		"purchaseDate": "2021/11/20",
+		"shop": "メルカリ",
+		"price": "400",
+		"discount": "0",
+		"paymentMethod": "メルペイ残高",
+		"title": "Rubyの冒険 旅立ち編"
+	}
+]

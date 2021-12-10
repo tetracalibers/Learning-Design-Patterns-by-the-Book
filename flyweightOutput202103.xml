@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookStack>
+    <book>
+        <purchasedate>2021/3/2</purchasedate>
+        <title>Sass &amp; Compass徹底入門</title>
+        <price>350</price>
+        <discount>0</discount>
+        <amountPaid>350</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/3/6</purchasedate>
+        <title>Kivyプログラミング</title>
+        <price>1500</price>
+        <discount>0</discount>
+        <amountPaid>1500</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/3/7</purchasedate>
+        <title>JavaScriptフレームワーク入門</title>
+        <price>810</price>
+        <discount>0</discount>
+        <amountPaid>810</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/3/7</purchasedate>
+        <title>C言語によるはじめてのアルゴリズム入門</title>
+        <price>900</price>
+        <discount>0</discount>
+        <amountPaid>900</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/3/7</purchasedate>
+        <title>CSSグリッドレイアウトデザインブック</title>
+        <price>1500</price>
+        <discount>0</discount>
+        <amountPaid>1500</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/3/24</purchasedate>
+        <title>The R Tips</title>
+        <price>1444</price>
+        <discount>0</discount>
+        <amountPaid>1444</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/3/26</purchasedate>
+        <title>現場で役立つjQueryデザインパーツライブラリ</title>
+        <price>439</price>
+        <discount>0</discount>
+        <amountPaid>439</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+</bookStack>

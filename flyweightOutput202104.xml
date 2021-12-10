@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookStack>
+    <book>
+        <purchasedate>2021/4/5</purchasedate>
+        <title>WebデザイナーのためのjQuery入門</title>
+        <price>498</price>
+        <discount>0</discount>
+        <amountPaid>498</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+</bookStack>

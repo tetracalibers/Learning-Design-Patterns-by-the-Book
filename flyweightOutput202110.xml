@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookStack>
+    <book>
+        <purchasedate>2021/10/3</purchasedate>
+        <title>Webデザインの現場で使えるVue.jsの教科書</title>
+        <price>2042</price>
+        <discount>0</discount>
+        <amountPaid>2042</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>Amazon</shop>
+    </book>
+    <book>
+        <purchasedate>2021/10/12</purchasedate>
+        <title>Land of Lisp</title>
+        <price>1780</price>
+        <discount>0</discount>
+        <amountPaid>1780</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/10/12</purchasedate>
+        <title>Land of Lisp</title>
+        <price>1404</price>
+        <discount>0</discount>
+        <amountPaid>1404</amountPaid>
+        <paymentMethod>メルペイ残高</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/10/13</purchasedate>
+        <title>ゲームアルゴリズムコレクション for iOS</title>
+        <price>400</price>
+        <discount>0</discount>
+        <amountPaid>400</amountPaid>
+        <paymentMethod>メルペイスマート払い</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/10/16</purchasedate>
+        <title>ブレイクスルーJavaScript</title>
+        <price>420</price>
+        <discount>0</discount>
+        <amountPaid>420</amountPaid>
+        <paymentMethod>メルペイスマート払い</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/10/19</purchasedate>
+        <title>NATURE OF CODE</title>
+        <price>3333</price>
+        <discount>0</discount>
+        <amountPaid>3333</amountPaid>
+        <paymentMethod>メルペイスマート払い</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/10/19</purchasedate>
+        <title>NATURE OF CODE</title>
+        <price>2961</price>
+        <discount>0</discount>
+        <amountPaid>2961</amountPaid>
+        <paymentMethod>メルペイ残高</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/10/22</purchasedate>
+        <title>キタミ式イラストIT塾 応用情報技術者 令和03年</title>
+        <price>1700</price>
+        <discount>0</discount>
+        <amountPaid>1700</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/10/22</purchasedate>
+        <title>キタミ式イラストIT塾 応用情報技術者 令和03年</title>
+        <price>540</price>
+        <discount>0</discount>
+        <amountPaid>540</amountPaid>
+        <paymentMethod>メルペイ残高</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/10/27</purchasedate>
+        <title>栢木先生の基本情報技術者教室</title>
+        <price>400</price>
+        <discount>0</discount>
+        <amountPaid>400</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+</bookStack>

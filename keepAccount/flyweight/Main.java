@@ -1,0 +1,181 @@
+import keepAccount.flyweight.*;
+import keepAccount.prototype2.*;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+    public static Integer label(int y, int m) {
+        String month = m < 10 ? '0' + String.valueOf(m) : String.valueOf(m);
+        int label = Integer.valueOf(String.valueOf(y) + month);
+        return label;
+    }
+    
+    public static void main(String[] args) {
+        BookStackFactory factory = BookStackFactory.getInstance();
+        Map<Integer, BookStack> bookStacks = new HashMap<>();
+        Publisher publisher = new Publisher();
+        
+        for (int y = 2021; y <= 2021; y++) {
+            for (int m = 2; m <= 11; m++) {
+                bookStacks.put(label(y, m), factory.getBookStack(label(y, m)));
+                publisher.archive(label(y, m), new Book(bookStacks.get(label(y, m)).getDocument()));
+            }
+        } 
+        
+        int y = 2021;
+        int m = 2;
+        BookStack februaryStack = bookStacks.get(label(y, m));
+        Manuscript februaryPublications = publisher.bookbinding(label(y, m));
+        februaryStack.add(februaryPublications.order("これだけで身につくPerl入門例題80", y, m, 4, "メルペイ残高", "メルカリ", 300, 224));
+        februaryStack.add(februaryPublications.order("初めてのPerl", y, m, 4, "メルペイ残高", "メルカリ", 510));
+        februaryStack.add(februaryPublications.order("JavaScript本格入門", y, m, 6, "メルペイ残高", "メルカリ", 700));
+        februaryStack.add(februaryPublications.order("実践力を身につけるPythonの教科書", y, m, 8, "メルペイ残高", "メルカリ", 990, 11));
+        februaryStack.add(februaryPublications.order("作りながら学ぶHTML/CSSデザインの教科書", y, m, 8, "メルペイ残高", "メルカリ", 800));
+        februaryStack.add(februaryPublications.order("いきなりはじめるPHP", y, m, 12, "メルペイ残高", "メルカリ", 650, 12));
+        februaryStack.add(februaryPublications.order("たのしいC#プログラミング", y, m, 12, "クレジットカード", "ラクマ", 1200));
+        februaryStack.add(februaryPublications.order("10日でおぼえるPerl/CGI入門教室", y, m, 13, "メルペイ残高", "メルカリ", 300, 10));
+        februaryStack.add(februaryPublications.order("ゲームで学ぶJavaScript入門", y, m, 13, "クレジットカード", "メルカリ", 999, 417));
+        februaryStack.add(februaryPublications.order("ゲームで学ぶJavaScript入門", y, m, 13, "メルペイ残高", "メルカリ", 417));
+        februaryStack.add(februaryPublications.order("10日でおぼえるHTML5入門教室", y, m, 14, "クレジットカード", "メルカリ", 400, 0));
+        februaryStack.add(februaryPublications.order("XHTML+CSS Webコンテンツデザインガイド", y, m, 16, "クレジットカード", "メルカリ", 300, 23));
+        februaryStack.add(februaryPublications.order("HTML5Canvas", y, m, 22, "クレジットカード", "メルカリ", 450, 270, 14));
+        februaryStack.add(februaryPublications.order("HTML5Canvas", y, m, 22, "メルペイ残高", "メルカリ", 270));
+        februaryStack.add(februaryPublications.order("WordPress仕事の現場でサッと使える！デザイン教科書", y, m, 22, "クレジットカード", "メルカリ", 850));
+        februaryStack.add(februaryPublications.order("C++クラスと継承完全制覇", y, m, 23, "クレジットカード", "メルカリ", 720, 14));
+        februaryStack.add(februaryPublications.order("詳解ActionScript3.0アニメーション", y, m, 23, "クレジットカード", "メルカリ", 390));
+        februaryStack.add(februaryPublications.order("CSS3デザインブック", y, m, 24, "クレジットカード", "メルカリ", 400));
+        februaryStack.add(februaryPublications.order("Head First PHP & MySQL", y, m, 25, "クレジットカード", "メルカリ", 840, 18));
+        februaryStack.add(februaryPublications.order("プログラミングRuby", y, m, 25, "クレジットカード", "メルカリ", 680));
+        februaryStack.add(februaryPublications.order("Head First Rails", y, m, 26, "メルペイ残高", "メルカリ", 450));
+        m++;
+        BookStack marchStack = bookStacks.get(label(y, m));
+        Manuscript marchPublications = publisher.bookbinding(label(y, m));
+        marchStack.add(marchPublications.order("Sass & Compass徹底入門", y, m, 2, "クレジットカード", "メルカリ", 350, 28));
+        marchStack.add(marchPublications.order("Kivyプログラミング", y, m, 6, "クレジットカード", "メルカリ", 1500, 5));
+        marchStack.add(marchPublications.order("JavaScriptフレームワーク入門", y, m, 7, "クレジットカード", "メルカリ", 810));
+        marchStack.add(marchPublications.order("C言語によるはじめてのアルゴリズム入門", y, m, 7, "クレジットカード", "メルカリ", 900));
+        marchStack.add(marchPublications.order("CSSグリッドレイアウトデザインブック", y, m, 7, "クレジットカード", "メルカリ", 1500, 6));
+        marchStack.add(marchPublications.order("The R Tips", y, m, 24, "クレジットカード", "メルカリ", 1444, 69));
+        marchStack.add(marchPublications.order("現場で役立つjQueryデザインパーツライブラリ", y, m, 26, "クレジットカード", "メルカリ", 439));
+        m++;
+        BookStack aprilStack = bookStacks.get(label(y, m));
+        Manuscript aprilPublications = publisher.bookbinding(label(y, m));
+        aprilStack.add(aprilPublications.order("WebデザイナーのためのjQuery入門", y, m, 5, "クレジットカード", "メルカリ", 498, 72, 27));
+        m++;
+        BookStack mayStack = bookStacks.get(label(y, m));
+        Manuscript mayPublications = publisher.bookbinding(label(y, m));
+        mayStack.add(mayPublications.order("HTML5による物理シミュレーション", y, m, 8, "クレジットカード", "メルカリ", 1600));
+        mayStack.add(mayPublications.order("HTML5による物理シミュレーション 拡散・波動編", y, m, 8, "クレジットカード", "メルカリ", 1300));
+        mayStack.add(mayPublications.order("Head First C", y, m, 28, "クレジットカード", "メルカリ", 980, 30));
+        mayStack.add(mayPublications.order("SQL書き方ドリル", y, m, 31, "クレジットカード", "メルカリ", 780));
+        m++;
+        BookStack juneStack = bookStacks.get(label(y, m));
+        Manuscript junePublications = publisher.bookbinding(label(y, m));
+        juneStack.add(junePublications.order("パーフェクトPHP", y, m, 1, "クレジットカード", "メルカリ", 650, 29, 4));
+        juneStack.add(junePublications.order("PHPによるWebアプリケーションスーパーサンプル 活用編", y, m, 4, "クレジットカード", "メルカリ", 780, 6));
+        juneStack.add(junePublications.order("PHPで始めるWebアプリケーション開発", y, m, 4, "メルペイスマート払い", "メルカリ", 300));
+        juneStack.add(junePublications.order("いまどきのアルゴリズムを使いこなすPHPプログラミング", y, m, 4, "メルペイスマート払い", "メルカリ", 300));
+        juneStack.add(junePublications.order("WordPress関数リファレンスガイド", y, m, 12, "メルペイスマート払い", "メルカリ", 400, 39, 5));
+        juneStack.add(junePublications.order("PHPによるWordPressカスタマイズブック", y, m, 12, "メルペイスマート払い", "メルカリ", 400));
+        juneStack.add(junePublications.order("jQueryクックブック", y, m, 12, "メルペイスマート払い", "メルカリ", 500));
+        juneStack.add(junePublications.order("10日でおぼえるPHP入門教室", y, m, 14, "メルペイスマート払い", "メルカリ", 400, 2));
+        juneStack.add(junePublications.order("10日でおぼえるPerl/CGI入門教室", y, m, 16, "メルペイ残高", "メルカリ", 410, 2));
+        juneStack.add(junePublications.order("プロを目指す人のためのRuby入門", y, m, 18, "クレジットカード", "ラクマ", 1400));
+        juneStack.add(junePublications.order("創るJava", y, m, 20, "メルペイ残高", "メルカリ", 1000, 2));
+        juneStack.add(junePublications.order("新・明解Pythonで学ぶアルゴリズムとデータ構造", y, m, 26, "メルペイ残高", "メルカリ", 2100, 9));
+        juneStack.add(junePublications.order("Web designer's handbook", y, m, 30, "メルペイ残高", "メルカリ", 300, 105, 10));
+        juneStack.add(junePublications.order("Ajax Webアプリケーションアイデアブック", y, m, 30, "メルペイ残高", "メルカリ", 300));
+        juneStack.add(junePublications.order("HTML5インタラクティブ表現ガイド", y, m, 30, "メルペイ残高", "メルカリ", 400));
+        juneStack.add(junePublications.order("JavaScriptビジュアル・リファレンス", y, m, 30, "クレジットカード", "メルカリ", 600, 208));
+        juneStack.add(junePublications.order("JavaScriptビジュアル・リファレンス", y, m, 30, "メルペイ残高", "メルカリ", 208));
+        m++;
+        BookStack julyStack = bookStacks.get(label(y, m));
+        Manuscript julyPublications = publisher.bookbinding(label(y, m));
+        julyStack.add(julyPublications.order("Amazon Web Services 基礎からのネットワーク＆サーバー構築", y, m, 2, "クレジットカード", "メルカリ", 890));
+        julyStack.add(julyPublications.order("独習LaTeX2e", y, m, 5, "クレジットカード", "メルカリ", 1100, 17));
+        julyStack.add(julyPublications.order("Head First JavaScript", y, m, 6, "クレジットカード", "メルカリ", 840));
+        julyStack.add(julyPublications.order("Head First ネットワーク", y, m, 6, "メルペイスマート払い", "メルカリ", 1200));
+        julyStack.add(julyPublications.order("基礎Perl", y, m, 9, "Amazonギフトカード", "Amazon", 558));
+        julyStack.add(julyPublications.order("Head First C#", y, m, 10, "メルペイ残高", "メルカリ", 810, 50));
+        julyStack.add(julyPublications.order("シェルスクリプト基本リファレンス", y, m, 12, "メルペイ残高", "メルカリ", 840));
+        julyStack.add(julyPublications.order("Head First Java", y, m, 13, "クレジットカード", "ラクマ", 1011, 50));
+        julyStack.add(julyPublications.order("Javaによるアルゴリズム事典", y, m, 14, "メルペイ残高", "メルカリ", 500, 12));
+        julyStack.add(julyPublications.order("超図解C#ルールブック", y, m, 14, "Amazonギフトカード", "Amazon", 321));
+        julyStack.add(julyPublications.order("開眼！JavaScript", y, m, 15, "メルペイ残高", "メルカリ", 600));
+        julyStack.add(julyPublications.order("独習XML", y, m, 15, "Amazonギフトカード", "Amazon", 345));
+        julyStack.add(julyPublications.order("すべての人のためのJavaプログラミング", y, m, 16, "Amazonギフトカード", "Amazon", 2530));
+        julyStack.add(julyPublications.order("実戦で役立つC#プログラミングのイディオム/定石＆パターン", y, m, 16, "Amazonギフトカード", "Amazon", 2722));
+        julyStack.add(julyPublications.order("Head First データ解析", y, m, 16, "Amazonギフトカード", "Amazon", 497));
+        julyStack.add(julyPublications.order("Go言語ハンズオン", y, m, 18, "メルペイ残高", "メルカリ", 2200, 27, 134));
+        julyStack.add(julyPublications.order("Go言語ハンズオン", y, m, 18, "メルペイスマート払い", "メルカリ", 134));
+        julyStack.add(julyPublications.order("JS+Node.jsによるWebクローラー／ネットエージェント開発テクニック", y, m, 22, "Amazonギフトカード", "Amazon", 380));
+        julyStack.add(julyPublications.order("Pythonクローリング＆スクレイピング", y, m, 24, "メルペイ残高", "メルカリ", 980, 45));
+        julyStack.add(julyPublications.order("HTML5スマホアプリ開発の教科書", y, m, 27, "メルペイ残高", "メルカリ", 500));
+        julyStack.add(julyPublications.order("HTML5ハイブリッドアプリ開発実践入門", y, m, 27, "メルペイ残高", "メルカリ", 450));
+        julyStack.add(julyPublications.order("LaTeX2eコマンドブック", y, m, 29, "Amazonギフトカード", "Amazon", 320));
+        m++;
+        BookStack augustStack = bookStacks.get(label(y, m));
+        Manuscript augustPublications = publisher.bookbinding(label(y, m));
+        augustStack.add(augustPublications.order("UNIXコマンドブック", y, m, 3, "メルペイ残高", "メルカリ", 720, 27));
+        augustStack.add(augustPublications.order("Python実践入門", y, m, 3, "メルペイ残高", "メルカリ", 2100));
+        augustStack.add(augustPublications.order("パーフェクトJavaScript", y, m, 5, "クレジットカード", "ラクマ", 650));
+        augustStack.add(augustPublications.order("JavaScript the good parts", y, m, 8, "メルペイ残高", "メルカリ", 400, 41));
+        augustStack.add(augustPublications.order("詳解WordPress", y, m, 8, "クレジットカード", "メルカリ", 720, 683));
+        augustStack.add(augustPublications.order("詳解WordPress", y, m, 8, "メルペイ残高", "メルカリ", 683));
+        augustStack.add(augustPublications.order("SQLパズル", y, m, 12, "クレジットカード", "メルカリ", 1000, 6));
+        augustStack.add(augustPublications.order("ウェブ配色ミニ帳", y, m, 14, "クレジットカード", "メルカリ", 300, 10));
+        augustStack.add(augustPublications.order("プログラミングのための線形代数", y, m, 15, "メルペイスマート払い", "メルカリ", 1990));
+        augustStack.add(augustPublications.order("PHP5 & XMLによるWebサービス構築", y, m, 15, "Amazonギフトカード", "Amazon", 321));
+        augustStack.add(augustPublications.order("実例で学ぶゲーム3D数学", y, m, 20, "メルペイスマート払い", "メルカリ", 1400, 48));
+        augustStack.add(augustPublications.order("Head First デザインパターン", y, m, 24, "メルペイ残高", "メルカリ", 1800, 21));
+        augustStack.add(augustPublications.order("CSS逆引きデザインレシピ", y, m, 25, "クレジットカード", "ラクマ", 500));
+        augustStack.add(augustPublications.order("エンジニアのためのWordPress開発入門", y, m, 26, "クレジットカード", "ラクマ", 1500, 200));
+        m++;
+        BookStack septemberStack = bookStacks.get(label(y, m));
+        Manuscript septemberPublications = publisher.bookbinding(label(y, m));
+        septemberStack.add(septemberPublications.order("Ajax Hacks", y, m, 5, "Amazonギフトカード", "Amazon", 281));
+        septemberStack.add(septemberPublications.order("実践Ruby on Rails 4", y, m, 9, "クレジットカード", "Amazon", 269));
+        septemberStack.add(septemberPublications.order("Ajaxデザインパターン", y, m, 11, "メルペイ残高", "メルカリ", 450, 27));
+        septemberStack.add(septemberPublications.order("Javaデザインパターン徹底攻略", y, m, 12, "クレジットカード", "メルカリ", 333, 117));
+        septemberStack.add(septemberPublications.order("Javaデザインパターン徹底攻略", y, m, 12, "メルペイ残高", "メルカリ", 117));
+        septemberStack.add(septemberPublications.order("Javaアルゴリズム＋データ構造完全制覇", y, m, 12, "クレジットカード", "Amazon", 269));
+        septemberStack.add(septemberPublications.order("Javaデザインパターン：プログラミングの実際pt.2", y, m, 13, "クレジットカード", "メルカリ", 980));
+        septemberStack.add(septemberPublications.order("Javaデザインパターン：プログラミングの実際pt.1", y, m, 13, "クレジットカード", "Amazon", 549));
+        septemberStack.add(septemberPublications.order("Pythonではじめる数学の冒険", y, m, 22, "メルペイ残高", "メルカリ", 2900, 24));
+        septemberStack.add(septemberPublications.order("Larabelリファレンス", y, m, 27, "クレジットカード", "Amazon", 366));
+        septemberStack.add(septemberPublications.order("いまどきのJSプログラマーのためのNode.jsとReactアプリケーション開発テクニック", y, m, 30, "クレジットカード", "メルカリ", 1950, 965));
+        septemberStack.add(septemberPublications.order("いまどきのJSプログラマーのためのNode.jsとReactアプリケーション開発テクニック", y, m, 30, "メルペイ残高", "メルカリ", 965));
+        septemberStack.add(septemberPublications.order("Vue.js入門", y, m, 30, "クレジットカード", "メルカリ", 2200));
+        m++;
+        BookStack octoberStack = bookStacks.get(label(y, m));
+        Manuscript octoberPublications = publisher.bookbinding(label(y, m));
+        octoberStack.add(octoberPublications.order("Webデザインの現場で使えるVue.jsの教科書", y, m, 3, "クレジットカード", "Amazon", 2042));
+        octoberStack.add(octoberPublications.order("Land of Lisp", y, m, 12, "クレジットカード", "メルカリ", 1780, 75, 1404));
+        octoberStack.add(octoberPublications.order("Land of Lisp", y, m, 12, "メルペイ残高", "メルカリ", 1404));
+        octoberStack.add(octoberPublications.order("ゲームアルゴリズムコレクション for iOS", y, m, 13, "メルペイスマート払い", "メルカリ", 400));
+        octoberStack.add(octoberPublications.order("ブレイクスルーJavaScript", y, m, 16, "メルペイスマート払い", "メルカリ", 420, 26));
+        octoberStack.add(octoberPublications.order("NATURE OF CODE", y, m, 19, "メルペイスマート払い", "メルカリ", 3333, 6, 2961));
+        octoberStack.add(octoberPublications.order("NATURE OF CODE", y, m, 19, "メルペイ残高", "メルカリ", 2961));
+        octoberStack.add(octoberPublications.order("キタミ式イラストIT塾 応用情報技術者 令和03年", y, m, 22, "クレジットカード", "メルカリ", 1700, 6, 540));
+        octoberStack.add(octoberPublications.order("キタミ式イラストIT塾 応用情報技術者 令和03年", y, m, 22, "メルペイ残高", "メルカリ", 540));
+        octoberStack.add(octoberPublications.order("栢木先生の基本情報技術者教室", y, m, 27, "クレジットカード", "メルカリ", 400, 74));
+        m++;
+        BookStack novemberStack = bookStacks.get(label(y, m));
+        Manuscript novemberPublications = publisher.bookbinding(label(y, m));
+        novemberStack.add(novemberPublications.order("ハッカーのたのしみ", y, m, 3, "メルペイスマート払い", "メルカリ", 500));
+        novemberStack.add(novemberPublications.order("独習Java", y, m, 4, "クレジットカード", "Amazon", 434));
+        novemberStack.add(novemberPublications.order("世界一わかりやすいSQLの授業", y, m, 5, "クレジットカード", "Amazon", 321));
+        novemberStack.add(novemberPublications.order("スラスラわかるJava", y, m, 20, "メルペイ残高", "メルカリ", 600, 52));
+        novemberStack.add(novemberPublications.order("Rubyの冒険 遊遊編", y, m, 20, "メルペイ残高", "メルカリ", 400));
+        novemberStack.add(novemberPublications.order("Rubyの冒険 旅立ち編", y, m, 20, "メルペイ残高", "メルカリ", 400));
+        novemberStack.add(novemberPublications.order("Javaネットワークプログラミング", y, m, 20, "クレジットカード", "Amazon", 320));
+        novemberStack.add(novemberPublications.order("SVGコーディングの基本", y, m, 24, "クレジットカード", "メルカリ", 1280, 21, 36));
+        novemberStack.add(novemberPublications.order("SVGコーディングの基本", y, m, 24, "メルペイ残高", "メルカリ", 36));
+        novemberStack.add(novemberPublications.order("シェルワンライナー160本ノック", y, m, 28, "クレジットカード", "Amazon", 2816));
+        novemberStack.add(novemberPublications.order("SQL実践入門", y, m, 29, "メルペイスマート払い", "メルカリ", 1800, 19));
+        
+        for (Object key : bookStacks.keySet()) {
+            bookStacks.get(key).dumpFile();
+        }
+    }
+}

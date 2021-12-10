@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookStack>
+    <book>
+        <purchasedate>2021/5/8</purchasedate>
+        <title>HTML5による物理シミュレーション</title>
+        <price>1600</price>
+        <discount>0</discount>
+        <amountPaid>1600</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/5/8</purchasedate>
+        <title>HTML5による物理シミュレーション 拡散・波動編</title>
+        <price>1300</price>
+        <discount>0</discount>
+        <amountPaid>1300</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/5/28</purchasedate>
+        <title>Head First C</title>
+        <price>980</price>
+        <discount>30</discount>
+        <amountPaid>950</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+    <book>
+        <purchasedate>2021/5/31</purchasedate>
+        <title>SQL書き方ドリル</title>
+        <price>780</price>
+        <discount>0</discount>
+        <amountPaid>780</amountPaid>
+        <paymentMethod>クレジットカード</paymentMethod>
+        <shop>メルカリ</shop>
+    </book>
+</bookStack>

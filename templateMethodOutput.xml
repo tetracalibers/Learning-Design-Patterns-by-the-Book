@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<bookShelf>
+		<book>
+			<purchaseDate>2021/11/20</purchaseDate>
+			<shop>メルカリ</shop>
+			<price>600</price>
+			<discount>52</discount>
+			<paymentMethod>クレジットカード</paymentMethod>
+			<title>スラスラわかるJava第2版</title>
+		</book>
+		<book>
+			<purchaseDate>2021/11/20</purchaseDate>
+			<shop>メルカリ</shop>
+			<price>400</price>
+			<discount>0</discount>
+			<paymentMethod>メルペイ残高</paymentMethod>
+			<title>Rubyの冒険 遊遊編</title>
+		</book>
+		<book>
+			<purchaseDate>2021/11/20</purchaseDate>
+			<shop>メルカリ</shop>
+			<price>400</price>
+			<discount>0</discount>
+			<paymentMethod>メルペイ残高</paymentMethod>
+			<title>Rubyの冒険 旅立ち編</title>
+		</book>
+	</bookShelf>
+</root>
